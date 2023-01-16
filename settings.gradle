@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        maven {
+            url "https://repo.spring.io/milestone"
+        }
+        maven{
+            url "https://repo.spring.io/snapshot"
+            mavenContent{
+                snapshotsOnly()
+            }
+        }
+        gradlePluginPortal()
+    }
+
+}
+rootProject.name = "Spring"
+include 'chapter01-hello-world'
+include 'chapter01-hello-boot'
+include 'chapter02'
+
